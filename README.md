@@ -37,7 +37,28 @@ Arch linux ou Derivados:
 sudo pacman -S git base-devel cmake
 ```
 
-### Como testar no linux
+### informações importatantes
+
+A versão do compilador de C++ usada deve ser maior ou igual a versão **4.8.1**
+uma vez que é utilizado C++11 nesse projeto, já o cmake foi configurado para aceitar
+versões muito antigas de nó mínimo **2.8.12**, então tenha em mente que:
+
+- sua versão do GCC deve ser maior ou igual __4.8.1__
+- sua versão do cmake deve ser maior ou igual __2.8.12__
+
+Para descobrir a sua versão atual do GCC digite no terminial:
+
+```shell
+gcc --version # deve ser maior que 4.8
+```
+
+Para descobrir a versão atual do cmake digite no terminal:
+
+```shell
+cmake --version # deve ser maior que 2.8.12
+```
+
+## Como testar no linux
 
 ```shell
 mkdir build
